@@ -3,9 +3,13 @@
 <head> 
     <meta charset="UTF-8">
     <title>My Website - About</title> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
 </head> 
 <body> 
-    <h1>Jada-Marie Dotting</h1> 
-    <p>Hello! My name is Jada-Marie Dotting and I am a senior at the University of the West Indies, Mona, where I am currently studying Computer Science. Aside from coding, I am very passionate about all things Art & Design, and so, a goal of mine is to pursue a career that combines both worlds, for example Web Design/Development. When I’m not coding or studying, I enjoy watching football, dancing and crocheting in my free time.</p> 
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/image.png') }}" alt="Programmer Illustration" class="profile-image">
+        <h1>Jada-Marie Dotting</h1> 
+        <p>Hello! My name is Jada-Marie Dotting and I am a senior at the University of the West Indies, Mona, where I am currently studying Computer Science. Aside from coding, I am very passionate about all things Art & Design, and so, a goal of mine is to pursue a career that combines both worlds, for example Web Design/Development. When I’m not coding or studying, I enjoy watching football, dancing and crocheting in my free time.</p> 
+    </div>
 </body> 
 </html> 
